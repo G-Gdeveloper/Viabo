@@ -1,0 +1,5 @@
+# Para installar todas las dependencias:
+npm install 
+# Esto ejecuta tailwind y daisyUI, no es necesario installar más
+# Para ver lo que esten realizando: 
+npm run dev
