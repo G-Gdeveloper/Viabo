@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Viabo</title>
+    <link rel="stylesheet" href="/assets/css/header.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>This is a simple HTML document.</p>
+    <header class="siteHeader">
+        <div class="headerInner">
+            <a class="brand" href="#" aria-label="Ir al inicio">
+                <img class="brandLogo" src="/assets/imagenes/Logo.png" alt="Viabo">
+            </a>
+
+            <button class="menuButton" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="siteNav" id="site-navigation" aria-label="Navegación principal">
+                <ul>
+                    <li><a class="active" href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <a class="cartButton" href="#" aria-label="Ir al carrito">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M3 4h2l2.2 9.3a1 1 0 0 0 1 .7h8.8a1 1 0 0 0 1-.8L20 7H7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="10" cy="19" r="1.6" fill="currentColor"/>
+                    <circle cx="17" cy="19" r="1.6" fill="currentColor"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="headerBackdrop" hidden></div>
+    </header>
+
+    <script type="module" src="/assets/js/main.js"></script>
+</body>
 </html>
