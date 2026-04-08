@@ -474,3 +474,281 @@ body {
         margin-bottom: 1.5rem;
     }
 }
+
+/* TESTIMONIOS */
+/* Contenedor principal de la seccion de testimonios */
+.testimonialsSection {
+    background: #f5f4ee;
+    padding: 4rem 1rem 3.5rem;
+}
+
+/* Centra el contenido y limita el ancho maximo */
+.testimonialsContainer {
+    width: min(1280px, 100%);
+    margin: 0 auto;
+}
+
+/* Alinea el encabezado de la seccion al centro */
+.testimonialsHeader {
+    text-align: center;
+}
+
+/* Texto superior en mayusculas (etiqueta de seccion) */
+.testimonialsEyebrow {
+    margin: 0;
+    color: #fc6600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Titulo principal de testimonios */
+.testimonialsTitle {
+    margin: 1rem auto 0;
+    max-width: 30rem;
+    color: #0052cc;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+/* Rejilla base de tarjetas (movil por defecto) */
+.testimonialsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+/* Tarjeta individual de testimonio */
+.testimonialCard {
+    min-height: 262px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 32px 64px -12px rgba(27, 28, 25, 0.06);
+}
+
+/* Color y tamano del bloque de estrellas */
+.testimonialStars {
+    color: #f6b313;
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Parrafo del testimonio */
+.testimonialText {
+    margin: 1rem 0 0;
+    color: #3e4944;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+/* Fila de informacion del autor (avatar + texto) */
+.testimonialAuthor {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Circulo del avatar */
+.testimonialAvatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background: #6f767d;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icono interno del avatar */
+.testimonialAvatarIcon {
+    width: 28px;
+    height: 28px;
+    fill: #ffffff;
+}
+
+/* Nombre del autor del testimonio */
+.testimonialName {
+    margin: 0;
+    color: #0052cc;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* Ubicacion del autor del testimonio */
+.testimonialLocation {
+    margin: 0.35rem 0 0;
+    color: rgba(62, 73, 68, 0.9);
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+/* FOOTER */
+/* Bloque base del footer */
+.siteFooter {
+    background: #f5f4ee;
+    margin-top: 0.5rem;
+    border-top: 1px solid rgba(190, 201, 195, 0.35);
+    padding: 3rem 1rem;
+}
+
+/* Contenedor del footer con ancho maximo */
+.siteFooterContainer {
+    width: min(1280px, 100%);
+    margin: 0 auto;
+}
+
+/* Rejilla de columnas del footer */
+.siteFooterGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+/* Enlace del logo en el footer */
+.siteFooterBrandLink {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+/* Tamano visual del logo */
+.siteFooterBrandLogo {
+    width: auto;
+    height: 48px;
+}
+
+/* Descripcion corta de la marca */
+.siteFooterBrandText {
+    margin: 1.25rem 0 0;
+    max-width: 260px;
+    color: rgba(27, 28, 25, 0.7);
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Titulos de columnas del footer */
+.siteFooterHeading {
+    margin: 0;
+    color: #0052cc;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* Lista de enlaces de cada columna */
+.siteFooterList {
+    margin: 0.75rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+    color: rgba(27, 28, 25, 0.7);
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+}
+
+/* Enlace del footer con color heredado */
+.siteFooterLink {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Cambio de color al pasar el mouse o navegar por teclado */
+.siteFooterLink:hover,
+.siteFooterLink:focus-visible {
+    color: #0052cc;
+}
+
+/* Fila de iconos sociales */
+.siteFooterSocials {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fc7f00;
+}
+
+/* Enlaces de iconos sociales */
+.siteFooterSocialLink {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    transition: opacity 0.2s ease;
+}
+
+/* Retroalimentacion visual de los iconos sociales */
+.siteFooterSocialLink:hover,
+.siteFooterSocialLink:focus-visible {
+    opacity: 0.8;
+}
+
+/* Tamano uniforme de los SVG sociales */
+.siteFooterSocialIcon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* Linea divisoria inferior del footer */
+.siteFooterDivider {
+    margin-top: 2.5rem;
+    border-top: 1px solid rgba(190, 201, 195, 0.35);
+}
+
+/* Ajustes responsive para tablet */
+@media (min-width: 768px) {
+    /* Aumenta el aire superior en testimonios */
+    .testimonialsSection {
+        padding-top: 5rem;
+    }
+
+    /* Pasa de 1 a 2 columnas en testimonios */
+    .testimonialsGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* La tercera tarjeta ocupa el ancho completo en tablet */
+    .testimonialCardWide {
+        grid-column: 1 / -1;
+    }
+
+    /* El footer pasa a 2 columnas */
+    .siteFooterGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Ajustes responsive para escritorio amplio */
+@media (min-width: 1200px) {
+    /* La rejilla de testimonios pasa a 3 columnas */
+    .testimonialsGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    /* La tarjeta ancha vuelve a comportamiento normal */
+    .testimonialCardWide {
+        grid-column: auto;
+    }
+
+    /* El footer pasa a 4 columnas */
+    .siteFooterGrid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
