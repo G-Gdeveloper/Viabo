@@ -6,14 +6,13 @@
     <title>Viabo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/Home.css">
 </head>
-
 <body>
     <header class="siteHeader">
         <div class="headerInner">
-            <a class="brand" href="#" aria-label="Ir al inicio">
+            <a class="brand" href="#home" aria-label="Ir al inicio">
                 <img class="brandLogo" src="/assets/imagenes/Logo.png" alt="Viabo">
             </a>
 
@@ -25,9 +24,9 @@
 
             <nav class="siteNav" id="site-navigation" aria-label="Navegación principal">
                 <ul>
-                    <li><a class="active" href="#">Inicio</a></li>
-                    <li><a href="#">Catálogo</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#home" data-route="home" class="active">Inicio</a></li>
+                    <li><a href="#catalog" data-route="catalog">Catálogo</a></li>
+                    <li><a href="#about" data-route="about">Nosotros</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
@@ -44,159 +43,7 @@
         <div class="headerBackdrop" hidden></div>
     </header>
 
-    <script type="module" src="/assets/js/main.js"></script>
-
-    <!-- Catalogo de servicios destacados -->
-    <div id="services" class="container">
-        <h3>EXPERIENCIAS DESTACADAS</h3>
-        <h2>Travesías Inolvidables</h2>
-        <div class="row-experiences">
-            <!-- Servicio 1 -->
-            <div class="column-experience">
-                <h2 class="card-category">Histórico</h2>
-                <h2 class="card-heading">La ruta de letras</h2>
-                <img src="/assets/images/Candelaria.png" alt="Candelaria" class="w-full rounded-lg">
-                <div class="experience">
-                    <div class="card-body">
-                        <h2 class="card-title">$160.000 COP</h2>
-                        <h3 class="card-subtitle">⭐ 4.9</h3>
-                        <p>
-                            Un recorrido para los amantes de la literatura y la historia, donde podrás recorrer
-                            la Candelaria, lugar historico por Gabriel García Márquez, el arte y las cafeterías literarias, 
-                            mientras escuchas relatos de poesia. Visita además la biblioteca más grande de Bogotá.
-                        </p>
-                        <button class="btn btn-primary">Ver Detalles</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Servicio 2 -->
-            <div class="column-experience">
-                <h2 class="card-category">Religioso</h2>
-                <h2 class="card-heading">Monserrate</h2>
-                <img src="/assets/images/Monserrate.jpg" alt="Monserrate" class="w-full rounded-lg">
-                <div class="experience">
-                    <div class="card-body">
-                        <h2 class="card-title">$100.000 COP</h2>
-                        <h3 class="card-subtitle">⭐ 4.8</h3>
-                        <p>
-                            ¡Vive una experiencia tanto deportiva como religiosa! Haremos un desafio de ascenso
-                            cronometrado para los deportistas o un ascenso por el sendero peatonal para los que 
-                            desean un plan más tranquilo. Disfruta de la gastronomía local y de
-                            las vistas panorámicas.
-                        </p>
-                        <button class="btn btn-primary">Ver Detalles</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Servicio 3 -->
-            <div class="column-experience">
-                <h2 class="card-category">Deportiva</h2>
-                <h2 class="card-heading">Cascadas Tour</h2>
-                <img src="/assets/images/Cascada.png" alt="Cascada" class="w-full rounded-lg">
-                <div class="experience">
-                    <div class="card-body">
-                        <h2 class="card-title">$175.000 COP</h2>
-                        <h3 class="card-subtitle">⭐ 4.7</h3>
-                        <p>
-                            Desconecta de la rutina y vive una experiencia de senderismo de alta intensidad, avistamiento de aves y 
-                            una sesión de meditación frente a una cascada hermosa, visitaremos la chorrera de Choachí o el salto del 
-                            Tequendama según disponibilidad.
-                        </p>
-                        <button class="btn btn-primary">Ver Detalles</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Seccion de testimonios basada en el diseno de Figma -->
-    <section class="testimonialsSection" aria-labelledby="testimonials-title">
-        <div class="testimonialsContainer">
-            <!-- Encabezado principal de la seccion -->
-            <div class="testimonialsHeader">
-                <p class="testimonialsEyebrow">Testimonios</p>
-                <h2 id="testimonials-title" class="testimonialsTitle">
-                    Voces de nuestros viajeros
-                </h2>
-            </div>
-
-            <!-- Rejilla responsiva de tarjetas de testimonios -->
-            <div class="testimonialsGrid">
-                <!-- Tarjeta de testimonio 1 -->
-                <article class="testimonialCard">
-                    <div>
-                        <!-- Valoracion en estrellas -->
-                        <div class="testimonialStars">★★★★★</div>
-                        <p class="testimonialText">
-                            "Una experiencia mágica. El guía conocía cada rincón de La Candelaria y nos contó historias que no están en los libros."
-                        </p>
-                    </div>
-                    <div class="testimonialAuthor">
-                        <!-- Avatar iconico de usuario -->
-                        <div class="testimonialAvatar" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" class="testimonialAvatarIcon" focusable="false">
-                                <path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0 2.25c-4.97 0-9 2.24-9 5v1.5h18v-1.5c0-2.76-4.03-5-9-5Z" />
-                            </svg>
-                        </div>
-                        <!-- Nombre y ubicacion del viajero -->
-                        <div class="testimonialMeta">
-                            <p class="testimonialName">6 Martínez</p>
-                            <p class="testimonialLocation">Guadalito, Venezuela</p>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Tarjeta de testimonio 2 -->
-                <article class="testimonialCard">
-                    <div>
-                        <!-- Valoracion en estrellas -->
-                        <div class="testimonialStars">★★★★☆</div>
-                        <p class="testimonialText">
-                            "Monserrate al atardecer fue lo mejor de mi viaje. La organización fue impecable y nos sentimos seguros en todo momento."
-                        </p>
-                    </div>
-                    <div class="testimonialAuthor">
-                        <!-- Avatar iconico de usuario -->
-                        <div class="testimonialAvatar" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" class="testimonialAvatarIcon" focusable="false">
-                                <path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0 2.25c-4.97 0-9 2.24-9 5v1.5h18v-1.5c0-2.76-4.03-5-9-5Z" />
-                            </svg>
-                        </div>
-                        <!-- Nombre y ubicacion del viajero -->
-                        <div class="testimonialMeta">
-                            <p class="testimonialName">Wilfredo Sonders</p>
-                            <p class="testimonialLocation">Arauca, Arauca</p>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Tarjeta de testimonio 3 (se expande en tablet) -->
-                <article class="testimonialCard testimonialCardWide">
-                    <div>
-                        <!-- Valoracion en estrellas -->
-                        <div class="testimonialStars">★★★★★</div>
-                        <p class="testimonialText">
-                            "El tour por los Saltos del Tequendama es impresionante. El respeto por la naturaleza y la historia local es notable."
-                        </p>
-                    </div>
-                    <div class="testimonialAuthor">
-                        <!-- Avatar iconico de usuario -->
-                        <div class="testimonialAvatar" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" class="testimonialAvatarIcon" focusable="false">
-                                <path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0 2.25c-4.97 0-9 2.24-9 5v1.5h18v-1.5c0-2.76-4.03-5-9-5Z" />
-                            </svg>
-                        </div>
-                        <!-- Nombre y ubicacion del viajero -->
-                        <div class="testimonialMeta">
-                            <p class="testimonialName">Sofia Vergara</p>
-                            <p class="testimonialLocation">Keneddy, Bogota</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+    <main id="app-home"></main>
 
     <!-- Footer principal del sitio -->
     <footer class="siteFooter">
@@ -205,11 +52,11 @@
             <div class="siteFooterGrid">
                 <!-- Bloque de marca y descripcion -->
                 <div class="siteFooterBrand">
-                    <a href="#" aria-label="Ir al inicio" class="siteFooterBrandLink">
+                    <a href="#home" aria-label="Ir al inicio" class="siteFooterBrandLink">
                         <img src="/assets/imagenes/Logo.png" alt="Viabo" class="siteFooterBrandLogo">
                     </a>
                     <p class="siteFooterBrandText">
-                        Experiencias auténticas que conectan viajeros con el alma de Bogotá.
+                        Experiencias autenticas que conectan viajeros con el alma de Bogota.
                     </p>
                 </div>
 
@@ -223,12 +70,12 @@
                     </ul>
                 </div>
 
-                <!-- Enlaces de navegacion: Compañía -->
+                <!-- Enlaces de navegacion: Compañia -->
                 <div class="siteFooterCol">
-                    <h3 class="siteFooterHeading">Compañía</h3>
+                    <h3 class="siteFooterHeading">Compañia</h3>
                     <ul class="siteFooterList">
                         <li><a href="#" class="siteFooterLink">Privacidad</a></li>
-                        <li><a href="#" class="siteFooterLink">Términos</a></li>
+                        <li><a href="#" class="siteFooterLink">Terminos</a></li>
                         <li><a href="#" class="siteFooterLink">Preguntas Frecuentes</a></li>
                         <li><a href="#" class="siteFooterLink">Soporte</a></li>
                     </ul>
@@ -236,7 +83,7 @@
 
                 <!-- Bloque de redes y compartido -->
                 <div class="siteFooterCol">
-                    <h3 class="siteFooterHeading">Síguenos</h3>
+                    <h3 class="siteFooterHeading">Siguenos</h3>
                     <div class="siteFooterSocials">
                         <!-- Icono de WhatsApp -->
                         <a href="#" aria-label="WhatsApp" class="siteFooterSocialLink">
@@ -265,6 +112,6 @@
         </div>
     </footer>
 
+    <script type="module" src="/assets/js/main.js"></script>
 </body>
-
 </html>
