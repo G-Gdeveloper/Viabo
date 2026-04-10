@@ -2,6 +2,7 @@ import './layout/navbar.js';
 import { renderHomeSection } from './pages/home.js';
 import { renderCatalogSection } from './pages/catalog.js';
 import { renderAboutUsSection } from './pages/aboutUs.js';
+import { renderServiceDetailSection } from './pages/serviceDetail.js';
 
 const routes = {
 	home: renderHomeSection,
@@ -38,7 +39,29 @@ function setActiveNavLink(route) {
 	});
 }
 
+function getSlugFromPath() {
+	const path = window.location.pathname;
+	const match = path.match(/\/catalogo\/([a-z0-9\-]+)$/);
+	return match ? match[1] : null;
+}
+
+function getSlugFromHash() {
+	const hash = window.location.hash.replace('#', '').trim().toLowerCase();
+	const match = hash.match(/^catalogo\/([a-z0-9\-]+)$/);
+	return match ? match[1] : null;
+}
+
 function renderRoute() {
+	const pathSlug = getSlugFromPath();
+	const hashSlug = getSlugFromHash();
+	const slug = pathSlug || hashSlug;
+
+	if (slug) {
+		renderServiceDetailSection(slug);
+		setActiveNavLink('catalog');
+		return;
+	}
+
 	const route = getRouteFromHash();
 
 	if (route === 'about' && hasSpaMount) {
@@ -58,8 +81,9 @@ function renderRoute() {
 
 if (hasSpaMount) {
 	window.addEventListener('hashchange', renderRoute);
+	window.addEventListener('popstate', renderRoute);
 
-	if (!window.location.hash) {
+	if (!window.location.hash && !getSlugFromPath()) {
 		window.location.hash = '#home';
 	} else {
 		renderRoute();
