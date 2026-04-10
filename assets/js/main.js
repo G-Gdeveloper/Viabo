@@ -88,4 +88,12 @@ if (hasSpaMount) {
 	} else {
 		renderRoute();
 	}
+} else {
+	window.addEventListener('hashchange', () => {
+		const route = getRouteFromHash();
+		redirectNonSpaRoutes(route);
+	});
+
+	const route = getRouteFromHash();
+	redirectNonSpaRoutes(route);
 }

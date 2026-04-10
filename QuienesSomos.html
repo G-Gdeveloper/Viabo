@@ -6,14 +6,14 @@
   <title>Viabo | Quienes somos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/QuienesSomos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/QuienesSomos.css">
 </head>
 <body>
   <header class="siteHeader">
     <div class="headerInner">
-      <a class="brand" href="/index.html#home" aria-label="Ir al inicio">
-        <img class="brandLogo" src="assets/imagenes/Logo.png" alt="Viabo">
+      <a class="brand" href="/#home" aria-label="Ir al inicio">
+        <img class="brandLogo" src="/assets/imagenes/Logo.png" alt="Viabo">
       </a>
 
       <button class="menuButton" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-navigation">
@@ -24,9 +24,9 @@
 
       <nav class="siteNav" id="site-navigation" aria-label="Navegación principal">
         <ul>
-          <li><a href="/index.html#home">Inicio</a></li>
-          <li><a href="/index.html#catalog">Catálogo</a></li>
-          <li><a class="active" href="/QuienesSomos.html#about">Nosotros</a></li>
+          <li><a href="/#home" data-route="home">Inicio</a></li>
+          <li><a href="/#catalog" data-route="catalog">Catálogo</a></li>
+          <li><a href="/#about" data-route="about" class="active">Nosotros</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
       </nav>
@@ -43,7 +43,7 @@
     <div class="headerBackdrop" hidden></div>
   </header>
 
-  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="/assets/js/main.js"></script>
 
   <main class="page">
     <section class="hero section reveal">
@@ -93,7 +93,7 @@
       <article class="split-card split-card--mission">
         <div class="split-card__content">
           <h2>Nuestra Mision</h2>
-          <p>
+          <p class="split-cart__desc">
             Ofrecemos paquetes turísticos divertidos y
             variados a los viajeros, enfocándonos en
             atracciones únicas de la ciudad de Bogotá,
@@ -101,7 +101,7 @@
             negocios locales.
           </p>
           <br>
-          <a href="#" class="split-card__cta">— Proposito activo</a>
+          <p class="split-card__cta">— Proposito activo</p>
         </div>
         <div class="split-card__image">
           <img
@@ -114,14 +114,14 @@
       <article class="split-card split-card--vision">
         <div class="split-card__content">
           <h2>Nuestra Vision</h2>
-          <p>
+          <p class="split-cart__desc">
             Ser líderes en el turismo local, reconocidos por
             nuestros precios accesibles, horarios flexibles,
             conocimiento de la ciudad y conexiones
             establecidas con las comunidades locales.
           </p>
           <br>
-          <a href="#" class="split-card__cta">— Hacia el futuro</a>
+          <p class="split-card__cta">— Hacia el futuro</p>
         </div>
         <div class="split-card__image">
           <img
