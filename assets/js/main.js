@@ -9,6 +9,21 @@ const routes = {
 	about: renderAboutUsSection
 };
 
+const currentPath = window.location.pathname;
+const hasSpaMount = Boolean(document.querySelector('#app-home'));
+
+if (currentPath.endsWith('/index.html')) {
+	const rootPath = currentPath.slice(0, -'index.html'.length);
+	const currentHash = window.location.hash || '#home';
+	window.history.replaceState(null, '', `${rootPath}${currentHash}`);
+}
+
+if (currentPath.endsWith('/QuienesSomos.html')) {
+	const rootPath = currentPath.slice(0, -'QuienesSomos.html'.length);
+	const currentHash = window.location.hash || '#about';
+	window.history.replaceState(null, '', `${rootPath}${currentHash}`);
+}
+
 function getRouteFromHash() {
 	const hash = window.location.hash.replace('#', '').trim().toLowerCase();
 	return routes[hash] ? hash : 'home';
@@ -25,6 +40,12 @@ function setActiveNavLink(route) {
 
 function renderRoute() {
 	const route = getRouteFromHash();
+
+	if (route === 'about' && hasSpaMount) {
+		window.location.replace('/QuienesSomos.html#about');
+		return;
+	}
+
 	const renderPage = routes[route];
 
 	if (!renderPage) {
@@ -35,10 +56,12 @@ function renderRoute() {
 	setActiveNavLink(route);
 }
 
-window.addEventListener('hashchange', renderRoute);
+if (hasSpaMount) {
+	window.addEventListener('hashchange', renderRoute);
 
-if (!window.location.hash) {
-	window.location.hash = '#home';
-} else {
-	renderRoute();
+	if (!window.location.hash) {
+		window.location.hash = '#home';
+	} else {
+		renderRoute();
+	}
 }
