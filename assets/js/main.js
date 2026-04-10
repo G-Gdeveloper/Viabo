@@ -38,6 +38,19 @@ function setActiveNavLink(route) {
 	});
 }
 
+function redirectNonSpaRoutes(route) {
+	if (hasSpaMount) {
+		return false;
+	}
+
+	if (route === 'home' || route === 'catalog') {
+		window.location.replace(`/index.html#${route}`);
+		return true;
+	}
+
+	return false;
+}
+
 function renderRoute() {
 	const route = getRouteFromHash();
 
@@ -64,4 +77,12 @@ if (hasSpaMount) {
 	} else {
 		renderRoute();
 	}
+} else {
+	window.addEventListener('hashchange', () => {
+		const route = getRouteFromHash();
+		redirectNonSpaRoutes(route);
+	});
+
+	const route = getRouteFromHash();
+	redirectNonSpaRoutes(route);
 }

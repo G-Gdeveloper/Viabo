@@ -2,6 +2,17 @@
 * {
     box-sizing: border-box;
 }
+:root {
+  --bg: #ece9e3;
+  --surface: #ffffff;
+  --ink: #2e3340;
+  --muted: #6d7280;
+  --primary: #0f44bd;
+  --accent: #ef6d22;
+  --shadow-soft: 0 14px 34px rgba(35, 42, 58, 0.14);
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+}
 
 html,
 body {
