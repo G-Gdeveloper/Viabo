@@ -46,6 +46,8 @@ const testimonials = [
 	}
 ];
 
+const homeHeroImage = '/assets/imagenes/Foto_Home.png';
+
 function buildExperienceCard(item) {
 	return `
 		<article class="column-experience">
@@ -94,6 +96,22 @@ export function renderHomeSection() {
 	}
 
 	mountNode.innerHTML = `
+		<section class="bogota-section home-hero-section" aria-label="Portada de inicio">
+			<div class="bogota-hero home-hero" role="banner">
+				<img src="${homeHeroImage}" alt="Panoramica de Bogota" class="bogota-hero-image">
+				<div class="bogota-hero-overlay"></div>
+				<div class="bogota-hero-content">
+					<p class="home-hero-eyebrow">EXPERIENCIAS BOGOTANAS</p>
+					<h1>Descubre el corazón<br><span>de los Andes</span></h1>
+					<p>Siente la energia de una ciudad que danza entre la historia colonial y la modernidad vibrante. Tours disenados para el viajero consciente.</p>
+					<div class="home-hero-actions">
+						<a href="/Catalogo.html#catalog" class="home-hero-cta home-hero-cta-primary">Explorar Catálogo</a>
+						<a href="/QuienesSomos.html#about" class="home-hero-cta home-hero-cta-secondary">Nuestra Historia <span aria-hidden="true">→</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section id="services" aria-label="Servicios destacados">
 			<h3>Experiencias</h3>
 			<h2>Home</h2>

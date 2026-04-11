@@ -25,6 +25,12 @@ if (currentPath.endsWith('/QuienesSomos.html')) {
 	window.history.replaceState(null, '', `${rootPath}${currentHash}`);
 }
 
+if (currentPath.endsWith('/Catalogo.html')) {
+	const rootPath = currentPath.slice(0, -'Catalogo.html'.length);
+	const currentHash = window.location.hash || '#catalog';
+	window.history.replaceState(null, '', `${rootPath}${currentHash}`);
+}
+
 function getRouteFromHash() {
 	const hash = window.location.hash.replace('#', '').trim().toLowerCase();
 	return routes[hash] ? hash : 'home';
@@ -64,6 +70,11 @@ function renderRoute() {
 
 	const route = getRouteFromHash();
 
+	if (route === 'catalog' && hasSpaMount && !currentPath.endsWith('/Catalogo.html')) {
+		window.location.replace('/Catalogo.html#catalog');
+		return;
+	}
+
 	if (route === 'about' && hasSpaMount) {
 		window.location.replace('/QuienesSomos.html#about');
 		return;
@@ -77,6 +88,26 @@ function renderRoute() {
 
 	renderPage();
 	setActiveNavLink(route);
+}
+
+function redirectNonSpaRoutes(route) {
+	if (route === 'about') {
+		if (!currentPath.endsWith('/QuienesSomos.html')) {
+			window.location.replace('/QuienesSomos.html#about');
+		}
+		return;
+	}
+
+	if (route === 'catalog') {
+		if (!currentPath.endsWith('/Catalogo.html')) {
+			window.location.replace('/Catalogo.html#catalog');
+		}
+		return;
+	}
+
+	if (!currentPath.endsWith('/index.html')) {
+		window.location.replace('/#home');
+	}
 }
 
 if (hasSpaMount) {

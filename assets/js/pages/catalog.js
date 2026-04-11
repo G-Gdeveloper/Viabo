@@ -1,4 +1,4 @@
-const heroImage = 'https://www.figma.com/api/mcp/asset/757ba1c8-0a49-41af-bce3-766780661335';
+const heroImage = '/assets/imagenes/imagenes_catalogo/fotoCatalogo.jpg';
 import { setupDetailCalendar, toIsoDate, toLongDate } from '../utils/detailCalendar.js';
 
 const catalogItems = [
@@ -11,7 +11,7 @@ const catalogItems = [
 		description: 'Explora los bares y clubes mas exclusivos de la Zona T y Chapinero.',
 		fullDescription: 'Vive la experiencia nocturna en Bogotá, llena de emociones y lugares vibrantes que la ciudad tiene para ti. Nuestro tour incluye transporte climatizado desde tu hotel hasta el Rooftop Mirador Central, uno de los miradores rumba más reconocidos, donde podrás tomar fotos, ver la ciudad entera, bailar y disfrutar de cocteles de bienvenida.',
 		highlights: [{code: 'VD', label: 'Vida Nocturna'}, {code: 'CL', label: 'Clubes'}, {code: 'CC', label: 'Cocteles'}],
-		image: 'https://www.figma.com/api/mcp/asset/5c66e9ac-fe7b-4851-84ea-e21693f4f6da'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio1.jpg'
 	},
 	{
 		slug: 'la-noche-de-flores-y-estrellas',
@@ -22,7 +22,7 @@ const catalogItems = [
 		description: 'Un recorrido bohemio por los miradores de la ciudad bajo la luz nocturna.',
 		fullDescription: 'Para una experiencia nocturna más tranquila, oferecemos un último viernes del mes un recorrido especial por el jardín botánico con música y refrigerio. Posteriormente nos dirigiremos al planetario para una función especial bajo las estrellas, perfecto para desconectar.',
 		highlights: [{code: 'JB', label: 'Jardín botánico'}, {code: 'PM', label: 'Planetario'}, {code: 'RF', label: 'Refrigerio'}],
-		image: 'https://www.figma.com/api/mcp/asset/45193f4c-09f2-4a06-ac4c-3d051c3b9341'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio2.jpg'
 	},
 	{
 		slug: 'la-ruta-de-letras',
@@ -33,7 +33,7 @@ const catalogItems = [
 		description: 'Visita librerias iconicas y cafes frecuentados por escritores bogotanos.',
 		fullDescription: 'Un recorrido para los amantes de la literatura que empieza a las 8 am en La Candelaria, un lugar histórico donde vivió Gabriel García Márquez. Recorreremos sus calles apreciando arte y parando en cafeterías literarias. Al medio día disfrutaremos almuerzo con muestra artística, visitaremos la Biblioteca Virgilio Barco y terminaremos en Café Pasaje literario hermoso.',
 		highlights: [{code: 'LT', label: 'Literatura'}, {code: 'CF', label: 'Cafeterías'}, {code: 'BV', label: 'Biblioteca'}],
-		image: 'https://www.figma.com/api/mcp/asset/76b66a22-e790-4bc3-9057-54c8944d9166'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio3.jpg'
 	},
 	{
 		slug: 'danzarte',
@@ -44,7 +44,7 @@ const catalogItems = [
 		description: 'Un taller inmersivo de ritmos tradicionales seguido de una puesta en escena.',
 		fullDescription: 'Para los amantes de la danza, vivir una experiencia inmersiva por la Casona de la Danza con tour guiado y muestra cultural. Luego toma una clase de ritmos latinos, tango o urbano. Después elige entre Theatrón, una de las discotecas más grandes de Latinoamérica, o una muestra cultural en nuestros teatros aliados.',
 		highlights: [{code: 'DZ', label: 'Danza'}, {code: 'CU', label: 'Cultura'}, {code: 'DC', label: 'Discoteca'}],
-		image: 'https://www.figma.com/api/mcp/asset/8f5cc7cc-b225-403d-ac17-a6c62aa4a46e'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio4.jpg'
 	},
 	{
 		slug: 'historia-y-arquitectura-una-nueva-mirada',
@@ -55,7 +55,7 @@ const catalogItems = [
 		description: 'Recorre La Candelaria y descubre secretos que guardan sus calles coloniales.',
 		fullDescription: 'Una mirada diferente a la historia y arquitectura a través de nuestro taller de fotografía. Tomaremos fotos de la arquitectura de La Candelaria y Plaza de Bolívar, notando el contraste entre el Capitolio Nacional y Palacio de la Justicia. Visitaremos Fragmentos, espacio de Arte y Memoria, y terminaremos con café-charla en la Casa de la Moneda discutiendo historia arquitectónica.',
 		highlights: [{code: 'FG', label: 'Fotografía'}, {code: 'AQ', label: 'Arquitectura'}, {code: 'AM', label: 'Arte'}],
-		image: 'https://www.figma.com/api/mcp/asset/912eb63f-7620-4596-9913-9c1bb70b4392'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio5.jpg'
 	},
 	{
 		slug: 'museos-caminata-y-cafe',
@@ -66,7 +66,7 @@ const catalogItems = [
 		description: 'Trilogia perfecta: visita museos, caminata historica y cafe de especialidad.',
 		fullDescription: 'Caminaremos entre arte y aromas locales visitando el Museo del Oro, Museorey y Museo de Arte Miguel Urritia. Recorreremos el Eje Ambiental diseñado por Rogelio Salmona y realizaremos una cata de café de especialidad en Tropicalia Coffee. Aprenderemos métodos de filtrado mientras compartimos las historias de arte apreciado a lo largo de la jornada.',
 		highlights: [{code: 'MU', label: 'Museos'}, {code: 'CA', label: 'Caminata'}, {code: 'CF', label: 'Café'}],
-		image: 'https://www.figma.com/api/mcp/asset/e44901b5-2e00-4132-b5f9-1c57b2fba4b9'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio6.jpg'
 	},
 	{
 		slug: 'conocer-y-hacer-arte',
@@ -77,7 +77,7 @@ const catalogItems = [
 		description: 'Interactua con artistas locales en sus talleres y crea tu propia pieza.',
 		fullDescription: 'Vive un día lleno de arte empezando con brunch artístico, un desayuno pintando opciones como totebags, cerámicas y lienzos. Luego visitaremos el Distrito Graffiti viendo el arte urbano con nueva mirada. Finalizaremos en el taller de artesanos en Pasaje Rivas, donde crearás tu propia pieza de arte local.',
 		highlights: [{code: 'BR', label: 'Brunch'}, {code: 'GR', label: 'Graffiti'}, {code: 'TA', label: 'Arte'}],
-		image: 'https://www.figma.com/api/mcp/asset/5cad9109-f459-4547-a795-7bbedb9d3f01'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio7.jpg'
 	},
 	{
 		slug: 'monserrate',
@@ -88,7 +88,7 @@ const catalogItems = [
 		description: 'El ascenso sagrado. Opcion de caminata deportiva o teleferico panoramico.',
 		fullDescription: 'Vive una experiencia tanto deportiva como religiosa en Monserrate con desafío de ascenso cronometrado para deportistas o sendero peatonal para planes más tranquilos. Desayunaremos de manera tradicional con tamal y chocolate, y visitaremos el majestuoso Santuario del Señor Caído con vistas panorámicas de la ciudad.',
 		highlights: [{code: 'SC', label: 'Santuario'}, {code: 'DT', label: 'Deporte'}, {code: 'VS', label: 'Vistas'}],
-		image: 'https://www.figma.com/api/mcp/asset/6cab6b98-c970-45d4-802b-7e4390a184b0'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio8.jpg'
 	},
 	{
 		slug: 'parques-de-diversion-tour',
@@ -99,7 +99,7 @@ const catalogItems = [
 		description: 'Adrenalina pura en los mejores parques tematicos de la ciudad.',
 		fullDescription: 'Para los amantes de la adrenalina, vive la experiencia en Salitre Mágico o Mundo Aventura con adrenalina pura. Incluye traslado desde tu hotel, almuerzo e igualmente, ¡vive la aventura con refrigerio nocturno disfrutando de todas las atracciones sin límites!.',
 		highlights: [{code: 'AD', label: 'Adrenalina'}, {code: 'PA', label: 'Parques'}, {code: 'AT', label: 'Atracciones'}],
-		image: 'https://www.figma.com/api/mcp/asset/dadd04d3-ea29-4625-bbcb-8edc7885033a'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio9.jpg'
 	},
 	{
 		slug: 'cascadas-tour',
@@ -110,7 +110,7 @@ const catalogItems = [
 		description: 'Caminata ecologica por los cerros orientales hasta encontrar cascadas.',
 		fullDescription: 'Desconecta de la rutina con senderismo de alta intensidad, avistamiento de aves y meditación frente a cascadas. Visitaremos Chorrera de Choachí o Salto del Tequendama según disponibilidad con desayuno antes de salir, almuerzo tipo picnic en la naturaleza y refrigerio nocturno. ¡Separa tu cupo para esta aventura inolvidable!',
 		highlights: [{code: 'SD', label: 'Senderismo'}, {code: 'AA', label: 'Aves'}, {code: 'MD', label: 'Meditación'}],
-		image: 'https://www.figma.com/api/mcp/asset/a4b14240-52e6-437a-94b0-e22d010dfff2'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio10.jpg'
 	},
 	{
 		slug: 'gastronomia',
@@ -121,7 +121,7 @@ const catalogItems = [
 		description: 'Un festin para los sentidos con mercados tradicionales y alta cocina.',
 		fullDescription: 'Si quieres vivir una experiencia gastronómica con contrastes culturales, te proponemos un plan de tres tiempos: desayuno de plaza, almuerzo en el centro con ajiaco santafereño, una auténtica sopa bogotana, y una tarde de postres especiales en lugares emblemáticos.',
 		highlights: [{code: 'DS', label: 'Desayuno'}, {code: 'AJ', label: 'Ajiaco'}, {code: 'PS', label: 'Postres'}],
-		image: 'https://www.figma.com/api/mcp/asset/5f20bdd2-1a80-4ea1-9488-cef2d906a59a'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio11.jpg'
 	},
 	{
 		slug: 'todo-al-50',
@@ -132,7 +132,7 @@ const catalogItems = [
 		description: 'Guia experta por outlets y zonas de descuentos para encontrar tesoros.',
 		fullDescription: 'Para los amantes del ahorro y las compras, visitaremos el outlet de las Américas en el sector de Calle 13, con múltiples marcas reconocidas internacionalmente. Descuentos disponibles todas las épocas del año con guía experta que conoce los mejores deals.',
 		highlights: [{code: 'OT', label: 'Outlet'}, {code: 'DC', label: 'Descuentos'}, {code: 'GU', label: 'Guía'}],
-		image: 'https://www.figma.com/api/mcp/asset/4ffe208b-3535-4619-ae61-2a31943f788a'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio12.jpg'
 	},
 	{
 		slug: 'centros-comerciales-tour',
@@ -143,7 +143,7 @@ const catalogItems = [
 		description: 'Explora centros comerciales con marcas globales y arquitectura moderna.',
 		fullDescription: 'Visita los centros comerciales más modernos de Bogotá con marcas globales, tiendas premium y arquitectura vanguardista. Un recorrido diseñado para los que buscan experiencia de compra de clase mundial con personal guía experto en recomendaciones y mejores opciones.',
 		highlights: [{code: 'CC', label: 'Centros'}, {code: 'MG', label: 'Marcas'}, {code: 'AR', label: 'Arquitectura'}],
-		image: 'https://www.figma.com/api/mcp/asset/4ffe208b-3535-4619-ae61-2a31943f788a'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio13.jpg'
 	},
 	{
 		slug: 'caminata-por-parque-nacional-natural',
@@ -154,7 +154,7 @@ const catalogItems = [
 		description: 'Expedición al páramo para avistar frailejones y fauna autóctona.',
 		fullDescription: 'Conoce el páramo en nuestra expedición al Parque Nacional Natural Chingaza con recorrido guiado para avistar frailejones y venados de cola blanca. Incluye transporte privado, entrada al parque, desayuno, almuerzo, cena, noche de alojamiento en refugio compartido, guía ambiental y seguro de asistencia médica.',
 		highlights: [{code: 'PQ', label: 'Páramo'}, {code: 'AA', label: 'Fauna'}, {code: 'AL', label: 'Alojamiento'}],
-		image: 'https://www.figma.com/api/mcp/asset/a4b14240-52e6-437a-94b0-e22d010dfff2'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio14.jpg'
 	},
 	{
 		slug: 'jaime-duque',
@@ -165,7 +165,7 @@ const catalogItems = [
 		description: 'Experiencia completa en el parque temático más grande de la región.',
 		fullDescription: 'Vive una experiencia única en el Parque Jaime Duque, incluye desayuno, almuerzo, cena, entrada al parque con pasaporte legado, transporte de turismo climatizado con asistencia médica disponible. Un día completo de diversión familiar con múltiples atracciones y experiencias unforgettable.',
 		highlights: [{code: 'PJ', label: 'Parque'}, {code: 'CM', label: 'Comidas'}, {code: 'TR', label: 'Transporte'}],
-		image: 'https://www.figma.com/api/mcp/asset/dadd04d3-ea29-4625-bbcb-8edc7885033a'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio15.jpg'
 	},
 	{
 		slug: 'plan-romantico',
@@ -176,7 +176,7 @@ const catalogItems = [
 		description: 'Experiencia de parejas con detalles especiales y atardeceres.',
 		fullDescription: 'Huye del ruido con tu pareja en una experiencia por estaciones: Picnic y lectura en Jardín Botánico, caminata por zona colonial de Usaquén visitando tiendas y galerías, postre en cafetería aliada y visita a Parroquia Santa Bárbara. Final romántico mirando atardecer en La Calera con canelazo y estrellas. Opcional: cena en Zona G.',
 		highlights: [{code: 'PC', label: 'Picnic'}, {code: 'AT', label: 'Atardecer'}, {code: 'ES', label: 'Especial'}],
-		image: 'https://www.figma.com/api/mcp/asset/45193f4c-09f2-4a06-ac4c-3d051c3b9341'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio16.jpg'
 	},
 	{
 		slug: 'puntos-principales',
@@ -187,7 +187,7 @@ const catalogItems = [
 		description: 'Recorrido esencial por los sitios imprescindibles de Bogotá.',
 		fullDescription: 'Visita puntos imprescindibles como Plazoleta del Chorro de Quevedo con sesión de cuentería y chicha artesanal, Plaza de Bolívar, Centro Cultural GGM, Parque Santander con Museo de Oro, Usaquén y el Mercado de las Pulgas en busca de artesanías de alta calidad. Finaliza con café en terrazas frente al parque.',
 		highlights: [{code: 'CU', label: 'Cultura'}, {code: 'ME', label: 'Mercado'}, {code: 'VA', label: 'Variedad'}],
-		image: 'https://www.figma.com/api/mcp/asset/76b66a22-e790-4bc3-9057-54c8944d9166'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio17.jpg'
 	},
 	{
 		slug: 'iglesias-y-peregrination',
@@ -198,7 +198,7 @@ const catalogItems = [
 		description: 'Tour guiado por las principales iglesias y catedrales de Bogotá.',
 		fullDescription: 'Visitaremos en tour guiado las principales catedrales de Bogotá con refrigerio y comidas incluidas: Catedral Primada de Colombia, Basílica Menor de Nuestra Señora de Lourdes, Santuario Nuestra Señora del Carmen, Iglesia de San Francisco y Basílica del Sagrado Corazón de Jesús. Un recorrido espiritual por la arquitectura religiosa más importante.',
 		highlights: [{code: 'CT', label: 'Catedrales'}, {code: 'AR', label: 'Religión'}, {code: 'RF', label: 'Refrigerio'}],
-		image: 'https://www.figma.com/api/mcp/asset/912eb63f-7620-4596-9913-9c1bb70b4392'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio18.jpg'
 	},
 	{
 		slug: 'mina-de-sal-de-zipaquira',
@@ -209,7 +209,7 @@ const catalogItems = [
 		description: 'Catedral bajo tierra: exploración de la única catedral en una mina de sal.',
 		fullDescription: 'Conoce una catedral asombrosa llena de historia, la única catedral del mundo construida dentro de una mina de sal a 180 metros bajo tierra. Tras descender y explorar sus galerías sagradas, caminaremos por la plaza de los comuneros conociendo la arquitectura y gastronomía local de Zipaquirá. Una experiencia arqueológica y religiosa única.',
 		highlights: [{code: 'MN', label: 'Mina'}, {code: 'CT', label: 'Catedral'}, {code: 'GS', label: 'Gastronomía'}],
-		image: 'https://www.figma.com/api/mcp/asset/6cab6b98-c970-45d4-802b-7e4390a184b0'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio19.jpg'
 	},
 	{
 		slug: 'bogota-a-tu-ritmo',
@@ -220,7 +220,7 @@ const catalogItems = [
 		description: 'Personaliza tu viaje según tus preferencias, fechas y presupuesto.',
 		fullDescription: 'Contáctanos y personaliza tu viaje según la cantidad de personas, el estilo del tour, las fechas y tu presupuesto. Nosotros te brindaremos la opción más adecuada a tus necesidades particulares. Desde tours de aventura hasta experiencias culturales, diseñamos tu Bogotá perfecta.',
 		highlights: [{code: 'PS', label: 'Personalizado'}, {code: 'FL', label: 'Flexible'}, {code: 'CT', label: 'Contáctanos'}],
-		image: 'https://www.figma.com/api/mcp/asset/4ffe208b-3535-4619-ae61-2a31943f788a'
+		image: '/assets/imagenes/imagenes_catalogo/fotoServicio20.jpg'
 	}
 ];
 
