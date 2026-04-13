@@ -11,10 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/Contact.css">
-    <script src = "./assets/js/pages/home.js"></script>
+    <link rel="stylesheet" href="/assets/css/Home.css">
 </head>
 <body>
-    <viabo-header></viabo-header>
+    <header class="siteHeader">
+    <div class="headerInner">
+      <a class="brand" href="/#home" aria-label="Ir al inicio">
+        <img class="brandLogo" src="/assets/imagenes/Logo.png" alt="Viabo">
+      </a>
+
+      <button class="menuButton" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="siteNav" id="site-navigation" aria-label="Navegación principal">
+        <ul>
+          <li><a href="/#home" data-route="home">Inicio</a></li>
+          <li><a href="/Catalogo.html#catalog" data-route="catalog">Catálogo</a></li>
+          <li><a href="/#about" data-route="about">Nosotros</a></li>
+          <li><a href="/contact.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a class="cartButton" href="#" aria-label="Ir al carrito">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M3 4h2l2.2 9.3a1 1 0 0 0 1 .7h8.8a1 1 0 0 0 1-.8L20 7H7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="10" cy="19" r="1.6" fill="currentColor"/>
+          <circle cx="17" cy="19" r="1.6" fill="currentColor"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="headerBackdrop" hidden></div>
+  </header>
     <div class = "globalContainer">
         <div class="infoContainer">
             <h3 class="card-title">¿Tienes alguna duda?</h3>
@@ -40,17 +71,18 @@
             </div>
 
         </div>
-        <div class="formContainer">
+        <form class="formContainer" id = "contact_form">
             <p class="title">Nombre Completo</p>
-            <input type="text" placeholder = "Tu nombre" class = "inputField"></input>
+            <input name = "nombre" type="text" placeholder = "Tu nombre" class = "inputField" required></input>
             <p class="title">Correo Electrónico</p>
-            <input type="text" placeholder = "email@ejemplo.com" class = "inputField"></input>
+            <input name = "email" type="email" placeholder = "email@ejemplo.com" class = "inputField" required></input>
             <p class="title">Mensaje</p>
-            <textarea maxlength = 500 placeholder="¿En qué podemos ayudarte?" class = "inputField expand"></textarea>
+            <textarea name = "mensaje" maxlength = 500 placeholder="¿En qué podemos ayudarte?" class = "inputField expand" required></textarea>
             <!-- <div contenteditable="true" placeholder = "¿En qué podemos ayudarte?" class = "inputFieldExpand"></div> -->
             <!-- <input type="text" placeholder = "¿En qué podemos ayudarte?" class = "inputField"></input> -->
-             <a href="https://www.youtube.com" class="btn">Enviar Mensaje</a>
+             <a href="#" class="btn" type = "submit" id = "submit_btn">Enviar Mensaje</a>
         </div>
     </div>
+    <script src = "assets/js/pages/contact.js"></script>
 </body>
 </html>
