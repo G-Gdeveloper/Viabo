@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viabo Contact</title>
+    <!-- Fuentes de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/Contact.css">
+    <script src = "./assets/js/pages/home.js"></script>
+</head>
+<body>
+    <viabo-header></viabo-header>
+    <div class = "globalContainer">
+        <div class="infoContainer">
+            <h3 class="card-title">¿Tienes alguna duda?</h3>
+            <p class="paragraph">Estamos aquí para ayudarte a planear la aventura perfecta en la capital. Escríbenos y nuestro equipo te responderá en menos de 24 horas.</p>
+            
+            <div class="contactInfo">
+                <div>
+                    <img src="./assets/imagenes/logo_email.png" alt="" class="logo">
+                </div>
+                <div>
+                    <p class="title">Correo Electrónico</p>
+                    <p class="paragraph">bogota@correo.co</p>
+                </div>
+            </div>
+            <div class="contactInfo">
+                <div>
+                    <img src="./assets/imagenes/logo_phone.png" alt="" class="logo">
+                </div>
+                <div>
+                    <p class="title">Whatsapp</p>
+                    <p class="paragraph">+57 300 000 0000</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="formContainer">
+            <p class="title">Nombre Completo</p>
+            <input type="text" placeholder = "Tu nombre" class = "inputField"></input>
+            <p class="title">Correo Electrónico</p>
+            <input type="text" placeholder = "email@ejemplo.com" class = "inputField"></input>
+            <p class="title">Mensaje</p>
+            <textarea maxlength = 500 placeholder="¿En qué podemos ayudarte?" class = "inputField expand"></textarea>
+            <!-- <div contenteditable="true" placeholder = "¿En qué podemos ayudarte?" class = "inputFieldExpand"></div> -->
+            <!-- <input type="text" placeholder = "¿En qué podemos ayudarte?" class = "inputField"></input> -->
+             <a href="https://www.youtube.com" class="btn">Enviar Mensaje</a>
+        </div>
+    </div>
+</body>
+</html>
