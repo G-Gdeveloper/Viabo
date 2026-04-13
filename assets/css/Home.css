@@ -2,6 +2,17 @@
 * {
     box-sizing: border-box;
 }
+:root {
+  --bg: #ece9e3;
+  --surface: #ffffff;
+  --ink: #2e3340;
+  --muted: #6d7280;
+  --primary: #0f44bd;
+  --accent: #ef6d22;
+  --shadow-soft: 0 14px 34px rgba(35, 42, 58, 0.14);
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+}
 
 html,
 body {
@@ -472,5 +483,1056 @@ body {
     #services h2 {
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
+    }
+}
+
+/* TESTIMONIOS */
+/* Contenedor principal de la seccion de testimonios */
+.testimonialsSection {
+    background: #f5f4ee;
+    padding: 4rem 1rem 3.5rem;
+}
+
+/* Centra el contenido y limita el ancho maximo */
+.testimonialsContainer {
+    width: min(1280px, 100%);
+    margin: 0 auto;
+}
+
+/* Alinea el encabezado de la seccion al centro */
+.testimonialsHeader {
+    text-align: center;
+}
+
+/* Texto superior en mayusculas (etiqueta de seccion) */
+.testimonialsEyebrow {
+    margin: 0;
+    color: #fc6600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Titulo principal de testimonios */
+.testimonialsTitle {
+    margin: 1rem auto 0;
+    max-width: 30rem;
+    color: #0052cc;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+/* Rejilla base de tarjetas (movil por defecto) */
+.testimonialsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+/* Tarjeta individual de testimonio */
+.testimonialCard {
+    min-height: 262px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 32px 64px -12px rgba(27, 28, 25, 0.06);
+}
+
+/* Color y tamano del bloque de estrellas */
+.testimonialStars {
+    color: #f6b313;
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Parrafo del testimonio */
+.testimonialText {
+    margin: 1rem 0 0;
+    color: #3e4944;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+/* Fila de informacion del autor (avatar + texto) */
+.testimonialAuthor {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Circulo del avatar */
+.testimonialAvatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background: #6f767d;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icono interno del avatar */
+.testimonialAvatarIcon {
+    width: 28px;
+    height: 28px;
+    fill: #ffffff;
+}
+
+/* Nombre del autor del testimonio */
+.testimonialName {
+    margin: 0;
+    color: #0052cc;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* Ubicacion del autor del testimonio */
+.testimonialLocation {
+    margin: 0.35rem 0 0;
+    color: rgba(62, 73, 68, 0.9);
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+/* FOOTER */
+/* Bloque base del footer */
+.siteFooter {
+    background: #f5f4ee;
+    margin-top: 0.5rem;
+    border-top: 1px solid rgba(190, 201, 195, 0.35);
+    padding: 3rem 1rem;
+}
+
+/* Contenedor del footer con ancho maximo */
+.siteFooterContainer {
+    width: min(1280px, 100%);
+    margin: 0 auto;
+}
+
+/* Rejilla de columnas del footer */
+.siteFooterGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+/* Enlace del logo en el footer */
+.siteFooterBrandLink {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+/* Tamano visual del logo */
+.siteFooterBrandLogo {
+    width: auto;
+    height: 48px;
+}
+
+/* Descripcion corta de la marca */
+.siteFooterBrandText {
+    margin: 1.25rem 0 0;
+    max-width: 260px;
+    color: rgba(27, 28, 25, 0.7);
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Titulos de columnas del footer */
+.siteFooterHeading {
+    margin: 0;
+    color: #0052cc;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* Lista de enlaces de cada columna */
+.siteFooterList {
+    margin: 0.75rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+    color: rgba(27, 28, 25, 0.7);
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+}
+
+/* Enlace del footer con color heredado */
+.siteFooterLink {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Cambio de color al pasar el mouse o navegar por teclado */
+.siteFooterLink:hover,
+.siteFooterLink:focus-visible {
+    color: #0052cc;
+}
+
+/* Fila de iconos sociales */
+.siteFooterSocials {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fc7f00;
+}
+
+/* Enlaces de iconos sociales */
+.siteFooterSocialLink {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    transition: opacity 0.2s ease;
+}
+
+/* Retroalimentacion visual de los iconos sociales */
+.siteFooterSocialLink:hover,
+.siteFooterSocialLink:focus-visible {
+    opacity: 0.8;
+}
+
+/* Tamano uniforme de los SVG sociales */
+.siteFooterSocialIcon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* Linea divisoria inferior del footer */
+.siteFooterDivider {
+    margin-top: 2.5rem;
+    border-top: 1px solid rgba(190, 201, 195, 0.35);
+}
+
+/* Ajustes responsive para tablet */
+@media (min-width: 768px) {
+    /* Aumenta el aire superior en testimonios */
+    .testimonialsSection {
+        padding-top: 5rem;
+    }
+
+    /* Pasa de 1 a 2 columnas en testimonios */
+    .testimonialsGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* La tercera tarjeta ocupa el ancho completo en tablet */
+    .testimonialCardWide {
+        grid-column: 1 / -1;
+    }
+
+    /* El footer pasa a 2 columnas */
+    .siteFooterGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Ajustes responsive para escritorio amplio */
+@media (min-width: 1200px) {
+    /* La rejilla de testimonios pasa a 3 columnas */
+    .testimonialsGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    /* La tarjeta ancha vuelve a comportamiento normal */
+    .testimonialCardWide {
+        grid-column: auto;
+    }
+
+    /* El footer pasa a 4 columnas */
+    .siteFooterGrid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* FIGMA: HERO + CATALOGO */
+:root {
+    --bg-soft: #faf9f4;
+    --brand-blue: #0141cf;
+    --text-body: #3e4944;
+    --text-price: #5d4100;
+    --brand-orange: #fc6600;
+}
+
+#app-home {
+    background: var(--bg-soft);
+    padding-bottom: 1.8rem;
+}
+
+.bogota-section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bogota-hero {
+    height: min(80vh, 694px);
+    min-height: 430px;
+    max-height: 694px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.bogota-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bogota-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #0141cf 0%, rgba(87, 133, 228, 0.56) 30%, rgba(195, 219, 255, 0) 72%);
+}
+
+.bogota-hero-content {
+    position: relative;
+    z-index: 1;
+    width: min(1280px, calc(100% - 4rem));
+    margin: 0 auto;
+    padding: 0 0.4rem;
+    max-width: 672px;
+}
+
+.bogota-hero-content h1 {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.4rem, 5.2vw, 5rem);
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.bogota-hero-content p {
+    margin: 1.45rem 0 0;
+    max-width: 33rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 2.1vw, 1.28rem);
+    line-height: 1.65;
+    color: rgba(250, 249, 244, 0.9);
+}
+
+.home-hero .bogota-hero-content h1 span {
+    color: var(--brand-orange);
+    font-style: italic;
+}
+
+.home-hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0.36rem 0.84rem;
+    border-radius: 999px;
+    background: rgba(1, 65, 207, 0.85);
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.home-hero-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.home-hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.32rem;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-hero-cta-primary {
+    min-height: 3rem;
+    padding: 0.82rem 1.3rem;
+    border-radius: 12px;
+    color: #ffffff;
+    background: linear-gradient(90deg, #030085 0%, #1974d3 100%);
+    box-shadow: 0 12px 20px -8px rgba(3, 0, 133, 0.35);
+}
+
+.home-hero-cta-primary:hover,
+.home-hero-cta-primary:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 18px 24px -8px rgba(3, 0, 133, 0.45);
+}
+
+.home-hero-cta-secondary {
+    color: var(--brand-orange);
+    border-radius: 10px;
+    padding: 0.35rem 0.4rem;
+}
+
+.home-hero-cta-secondary span {
+    transition: transform 0.2s ease;
+}
+
+.home-hero-cta-secondary:hover span,
+.home-hero-cta-secondary:focus-visible span {
+    transform: translateX(3px);
+}
+
+.bogota-grid {
+    width: min(1280px, calc(100% - 3rem));
+    margin: -2.85rem auto 0;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem 1.6rem;
+    padding-bottom: 1.6rem;
+}
+
+.bogota-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 32px 64px -12px rgba(27, 28, 25, 0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 414px;
+}
+
+.bogota-card-media {
+    position: relative;
+    height: 224px;
+    overflow: hidden;
+}
+
+.bogota-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bogota-chip {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    border-radius: 999px;
+    padding: 0.24rem 0.76rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.74rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.bogota-chip.is-orange {
+    background: #fc6600;
+}
+
+.bogota-chip.is-blue {
+    background: #0141cf;
+}
+
+.bogota-chip.is-amber {
+    background: #946200;
+}
+
+.bogota-chip.is-cyan {
+    background: #0f8ed6;
+}
+
+.bogota-chip.is-muted {
+    background: #5f6a6a;
+}
+
+.bogota-card-content {
+    padding: 1.35rem 1.5rem 1.42rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.bogota-card-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.bogota-card-head h3 {
+    margin: 0;
+    color: var(--brand-blue);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
+.bogota-card-head strong {
+    color: var(--text-price);
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    white-space: nowrap;
+    padding-top: 0.2rem;
+}
+
+.bogota-card-content p {
+    margin: 0.85rem 0 0;
+    color: var(--text-body);
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.42;
+}
+
+.bogota-link {
+    border: 0;
+    background: transparent;
+    margin: auto 0 0;
+    padding: 1.2rem 0 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--brand-orange);
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    cursor: pointer;
+}
+
+.bogota-link span {
+    transition: transform 0.2s ease;
+}
+
+.bogota-link:hover span,
+.bogota-link:focus-visible span {
+    transform: translateX(3px);
+}
+
+.detail-view {
+    width: min(1440px, calc(100% - 4rem));
+    margin: 2.75rem auto 3rem;
+}
+
+.detail-back {
+    border: 0;
+    background: transparent;
+    color: #0141cf;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 0 1.15rem;
+    padding: 0;
+}
+
+.detail-hero {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 420px;
+}
+
+.detail-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(2, 8, 20, 0.02) 15%, rgba(2, 8, 20, 0.74) 100%);
+}
+
+.detail-hero-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 2.25rem;
+    max-width: 880px;
+}
+
+.detail-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 0.44rem 1rem;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.detail-hero-content h1 {
+    margin: 0.9rem 0 1.15rem;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(2rem, 4.2vw, 4.5rem);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    max-width: 30rem;
+}
+
+.detail-price-box {
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background: rgba(250, 249, 244, 0.16);
+    backdrop-filter: blur(6px);
+    padding: 0.72rem 1rem;
+}
+
+.detail-price-box small {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.78rem;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.detail-price-box strong {
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.3rem, 2.3vw, 1.85rem);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.detail-grid {
+    margin-top: 3.8rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 1fr);
+    gap: 2.8rem;
+    align-items: start;
+}
+
+.detail-content-left {
+    display: grid;
+    gap: 2.65rem;
+}
+
+.detail-description {
+    display: grid;
+    gap: 0.82rem;
+}
+
+.detail-eyebrow {
+    margin: 0;
+    color: #9d4227;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.detail-copy {
+    margin: 0;
+    color: #1b1c19;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.05rem, 1.8vw, 1.8rem);
+    line-height: 1.55;
+}
+
+.detail-highlights {
+    border-top: 1px solid rgba(190, 201, 195, 0.24);
+    border-bottom: 1px solid rgba(190, 201, 195, 0.24);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 1.45rem 0;
+}
+
+.detail-highlight-item {
+    display: grid;
+    justify-items: center;
+    gap: 0.72rem;
+    text-align: center;
+}
+
+.detail-highlight-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background: #e9e8e3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.detail-highlight-item p {
+    margin: 0;
+    color: #1b1c19;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9rem;
+}
+
+.detail-booking {
+    border-radius: 24px;
+    border: 1px solid rgba(190, 201, 195, 0.1);
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    display: grid;
+    gap: 1.35rem;
+}
+
+.detail-booking h2 {
+    margin: 0;
+    color: #1b1c19;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.detail-booking-group p {
+    margin: 0;
+    color: #3e4944;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.detail-calendar-head,
+.detail-calendar-grid {
+    margin-top: 0.6rem;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 0.38rem;
+}
+
+.detail-calendar-shell {
+    margin-top: 0.6rem;
+    border-radius: 14px;
+    border: 1px solid rgba(190, 201, 195, 0.3);
+    background: #f9faf8;
+    padding: 0.75rem;
+}
+
+.detail-calendar-toolbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.detail-calendar-month {
+    margin: 0;
+    text-align: center;
+    color: #1b1c19;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.86rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.detail-calendar-nav {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(190, 201, 195, 0.8);
+    border-radius: 0.7rem;
+    background: #ffffff;
+    color: #3e4944;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.detail-calendar-nav:hover {
+    border-color: #5a6762;
+    color: #1b1c19;
+}
+
+.detail-calendar-nav:focus-visible {
+    outline: 2px solid #0141cf;
+    outline-offset: 1px;
+}
+
+.detail-calendar-head span {
+    text-align: center;
+    color: rgba(62, 73, 68, 0.4);
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.7rem;
+}
+
+.detail-day {
+    border: 1px solid transparent;
+    border-radius: 0.7rem;
+    min-height: 2.2rem;
+    background: #ffffff;
+    color: #22302a;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.18s ease, border-color 0.18s ease, background-color 0.18s ease, color 0.18s ease;
+}
+
+.detail-day:hover {
+    border-color: rgba(1, 65, 207, 0.35);
+    color: #0141cf;
+}
+
+.detail-day:focus-visible {
+    outline: 2px solid #0141cf;
+    outline-offset: 1px;
+}
+
+.detail-day.is-selected {
+    background: #0141cf;
+    color: #ffffff;
+    border-color: #0141cf;
+}
+
+.detail-day.is-today {
+    border-color: rgba(1, 65, 207, 0.3);
+}
+
+.detail-day.is-disabled {
+    background: #f2f4f2;
+    color: rgba(62, 73, 68, 0.35);
+    cursor: not-allowed;
+    border-color: transparent;
+}
+
+.detail-day-placeholder {
+    min-height: 2.2rem;
+}
+
+.detail-counter {
+    margin-top: 0.8rem;
+    border-radius: 12px;
+    border: 1px solid rgba(190, 201, 195, 0.2);
+    background: #f5f4ee;
+    padding: 0.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail-counter-button {
+    width: 2.35rem;
+    height: 2.35rem;
+    border-radius: 999px;
+    border: 1px solid #bec9c3;
+    background: #ffffff;
+    color: #1b1c19;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.detail-counter-value {
+    color: #1b1c19;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.22rem;
+    font-weight: 600;
+}
+
+.detail-total-row {
+    border-top: 1px solid rgba(190, 201, 195, 0.24);
+    padding-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail-total-row span {
+    color: #1b1c19;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.detail-total-row strong {
+    color: #1b1c19;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.38rem;
+    font-weight: 600;
+}
+
+.detail-reserve {
+    min-height: 3.6rem;
+    border-radius: 14px;
+    border: 0;
+    background: linear-gradient(90deg, #030085 0%, #1974d3 100%);
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 20px 25px -5px rgba(0, 81, 63, 0.2), 0 8px 10px -6px rgba(0, 81, 63, 0.2);
+}
+
+@media (max-width: 1240px) {
+    .bogota-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 960px) {
+    .bogota-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: min(1280px, calc(100% - 2rem));
+        margin-top: -2.4rem;
+    }
+
+    .bogota-hero-content {
+        width: min(1280px, calc(100% - 2rem));
+    }
+
+    .bogota-card-head h3 {
+        font-size: 1.45rem;
+    }
+
+    .detail-view {
+        width: min(1280px, calc(100% - 2rem));
+        margin-top: 1.6rem;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+        margin-top: 1.85rem;
+        gap: 1.7rem;
+    }
+
+    .detail-hero-content {
+        padding: 1.3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .bogota-hero {
+        min-height: 360px;
+        max-height: none;
+        height: 450px;
+        align-items: flex-end;
+        padding-bottom: 2rem;
+    }
+
+    .bogota-hero-overlay {
+        background: linear-gradient(180deg, rgba(1, 65, 207, 0.6) 0%, rgba(1, 65, 207, 0.88) 58%, rgba(1, 65, 207, 0.96) 100%);
+    }
+
+    .bogota-hero-content {
+        width: calc(100% - 1.5rem);
+    }
+
+    .bogota-hero-content h1 {
+        font-size: 2.35rem;
+        line-height: 1.08;
+    }
+
+    .bogota-hero-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+    }
+
+    .home-hero-eyebrow {
+        font-size: 0.6rem;
+        letter-spacing: 0.08em;
+    }
+
+    .home-hero-actions {
+        margin-top: 1.1rem;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.6rem;
+    }
+
+    .home-hero-cta {
+        justify-content: center;
+    }
+
+    .bogota-grid {
+        grid-template-columns: 1fr;
+        width: calc(100% - 1.2rem);
+        margin-top: -1.2rem;
+        gap: 1.25rem;
+    }
+
+    .bogota-card {
+        min-height: 390px;
+    }
+
+    .detail-view {
+        width: calc(100% - 1.2rem);
+        margin-top: 1rem;
+    }
+
+    .detail-hero {
+        min-height: 290px;
+    }
+
+    .detail-hero-content h1 {
+        font-size: 2rem;
+        max-width: 100%;
+    }
+
+    .detail-highlights {
+        grid-template-columns: 1fr;
+        gap: 1.15rem;
+    }
+
+    .detail-highlight-item {
+        justify-items: start;
+        text-align: left;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+
+    .detail-highlight-item p {
+        font-size: 0.88rem;
+    }
+
+    .detail-booking {
+        padding: 1.15rem;
+        border-radius: 16px;
     }
 }
