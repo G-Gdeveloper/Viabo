@@ -3,6 +3,7 @@ import { renderHomeSection } from './pages/home.js';
 import { renderCatalogSection } from './pages/catalog.js';
 import { renderAboutUsSection } from './pages/aboutUs.js';
 import { renderServiceDetailSection } from './pages/serviceDetail.js';
+import { updateCartBadge } from './cart/cartUI.js';
 
 const routes = {
 	home: renderHomeSection,
@@ -128,3 +129,6 @@ if (hasSpaMount) {
 	const route = getRouteFromHash();
 	redirectNonSpaRoutes(route);
 }
+
+// Inicializar badge del carrito
+updateCartBadge();

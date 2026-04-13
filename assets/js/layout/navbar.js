@@ -8,6 +8,7 @@
 	const menuButton = header.querySelector('.menuButton');
 	const nav = header.querySelector('.siteNav');
 	const backdrop = header.querySelector('.headerBackdrop');
+	const cartButton = header.querySelector('.cartButton');
 
 	if (!menuButton || !nav || !backdrop) {
 		return;
@@ -34,4 +35,15 @@
 			setOpenState(false);
 		}
 	});
+
+	// Carrito
+	if (cartButton) {
+		cartButton.addEventListener('click', (e) => {
+			e.preventDefault();
+			import('../cart/cartUI.js').then(module => {
+				module.setupCartModal();
+			});
+		});
+	}
 })();
+

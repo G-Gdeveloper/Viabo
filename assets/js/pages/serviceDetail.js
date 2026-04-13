@@ -1,5 +1,7 @@
 import { catalogItems, categoryThemeClass, toPricePerPerson } from './catalog.js';
 import { setupDetailCalendar, toIsoDate, toLongDate } from '../utils/detailCalendar.js';
+import { cartManager } from '../cart/cartManager.js';
+import { setupCartModal, updateCartBadge } from '../cart/cartUI.js';
 
 export function renderServiceDetailSection(slug) {
 	const mountNode = document.querySelector('#app-home');
@@ -82,7 +84,8 @@ export function renderServiceDetailSection(slug) {
 						<span>Total</span>
 						<strong id="detail-total-value">${service.priceCop > 0 ? toPricePerPerson(service.priceCop * 2) : 'Contáctanos'}</strong>
 					</div>
-					<button type="button" class="detail-reserve">Reservar Ahora</button>
+					<button type="button" class="detail-reserve detail-add-to-cart">Agregar al Carrito</button>
+					<button type="button" class="detail-reserve-secondary detail-view-cart" style="display: none;">Ver Carrito</button>
 				</aside>
 			</div>
 		</section>
@@ -158,9 +161,37 @@ export function renderServiceDetailSection(slug) {
 				year: bookingState.date.year
 			};
 
-			window.alert(
-				`Reserva iniciada para ${service.title} el ${toLongDate(scheduleDate)} (${toIsoDate(scheduleDate)}).`
-			);
+			cartManager.addItem(service, scheduleDate, bookingState.people);
+			updateCartBadge();
+
+			// Mostrar feedback visual
+			const addBtn = mountNode.querySelector('.detail-add-to-cart');
+			const viewCartBtn = mountNode.querySelector('.detail-view-cart');
+
+			if (addBtn && viewCartBtn) {
+				addBtn.style.display = 'none';
+				viewCartBtn.style.display = 'block';
+			}
+
+			const originalText = reserveButton.textContent;
+			reserveButton.textContent = '✓ Agregado al carrito';
+			reserveButton.disabled = true;
+
+			setTimeout(() => {
+				if (addBtn && viewCartBtn) {
+					addBtn.style.display = 'block';
+					viewCartBtn.style.display = 'none';
+				}
+				reserveButton.textContent = originalText;
+				reserveButton.disabled = false;
+			}, 2000);
+		});
+	}
+
+	const viewCartBtn = mountNode.querySelector('.detail-view-cart');
+	if (viewCartBtn) {
+		viewCartBtn.addEventListener('click', () => {
+			setupCartModal();
 		});
 	}
 
