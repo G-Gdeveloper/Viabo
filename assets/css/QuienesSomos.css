@@ -442,6 +442,9 @@ p {
 
 .split-card__content {
   padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .split-card__content h2 {
