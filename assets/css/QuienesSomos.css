@@ -518,7 +518,7 @@ p {
   aspect-ratio: 1 / 1;
   margin: 0 auto;
   border-radius: 16px;
-  border: 2px solid rgba(15, 68, 189, 0.24);
+  border: 2px solid  rgba(15, 68, 189, 0.24);
   background: linear-gradient(145deg, #e5ebf6 0%, #f7f9fc 100%);
   position: relative;
 }
