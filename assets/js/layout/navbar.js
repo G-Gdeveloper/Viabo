@@ -1,3 +1,5 @@
+import '../utils/cartBadge.js';
+
 (function () {
 	const header = document.querySelector('.siteHeader');
 

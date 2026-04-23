@@ -3,11 +3,13 @@ import { renderHomeSection } from './pages/home.js';
 import { renderCatalogSection } from './pages/catalog.js';
 import { renderAboutUsSection } from './pages/aboutUs.js';
 import { renderServiceDetailSection } from './pages/serviceDetail.js';
+import { renderCartSection } from './pages/cartView.js';
 
 const routes = {
 	home: renderHomeSection,
 	catalog: renderCatalogSection,
-	about: renderAboutUsSection
+	about: renderAboutUsSection,
+	cart: renderCartSection
 };
 
 const currentPath = window.location.pathname;
